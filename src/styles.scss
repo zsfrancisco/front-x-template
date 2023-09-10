@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'src/assets/scss';
+
+body {
+    background-color: $black;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 0.625rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $gray-border;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $gray-border;
+    }
+}
+
+button {
+    border: 0;
+}

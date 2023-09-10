@@ -1,0 +1,117 @@
+@import 'src/assets/scss';
+
+:host {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+}
+
+img {
+    width: 28.38px;
+    height: 23.07px;
+}
+
+.side-nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__home {
+        margin-top: 0.313rem;
+        background-color: transparent;
+        width: 3.15rem;
+        height: 3.15rem;
+        border-radius: 50%;
+        @extend .flex-centered;
+
+        &:hover {
+            @extend .hover-blue-dark;
+        }
+        img {
+            width: 1.686rem;
+            height: 1.686rem;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 0;
+
+        li {
+            color: $white;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 624.938rem;
+
+            &:hover {
+                @extend .hover-blue-dark
+            }
+
+            img {
+                width: 24.28px;
+                height: 22.15px;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__new-post {
+        @extend .create-x-button;
+        width: 100%;
+        height: 3.25rem;
+        font-size: 1.25rem;
+    }
+
+    &__user-information {
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        padding: 0.6rem;
+        border-radius: 624.938rem;
+        margin-bottom: 1rem;
+
+        &:hover {
+            @extend .hover-blue-dark
+        }
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        .username-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1 1 auto;
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: $white;
+
+                    &:last-of-type {
+                        color: $gray-font;
+                    }
+                }
+            }
+
+            img {
+                margin: 0;
+                width: 1.172rem;
+                height: 1.172rem;
+            }
+        }
+    }
+}

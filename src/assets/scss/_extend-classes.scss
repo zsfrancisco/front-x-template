@@ -1,0 +1,24 @@
+@import 'colors';
+
+.hover-blue-dark {
+    background-color: $black-hover;
+    cursor: pointer;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-x-button {
+    background-color: $blue-light;
+    color: $white;
+    font-weight: bold;
+    border-radius: 624.938rem;
+
+    &:hover {
+        background-color: $blue-light-hover;
+    }
+}
+
