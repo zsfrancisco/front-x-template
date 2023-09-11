@@ -80,11 +80,15 @@
                 }
             }
 
-            create-post {
+            .create-post {
                 @extend .create-x-button;
                 width: 75px;
                 height: 2.125rem;
                 font-size: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

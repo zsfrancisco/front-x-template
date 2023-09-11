@@ -1,6 +1,6 @@
-import {Twit} from "../tyoes";
+import { XPost } from "../types";
 
-export const TWITS: Twit[] = [
+export const X_POST: XPost[] = [
   {
     userPhoto: "assets/images/jpg/user-photo-1.jpg",
     userFullName: "Marcel Kiss",
@@ -10,7 +10,7 @@ export const TWITS: Twit[] = [
     imageAttachment: "assets/images/png/tweet-1.png",
     comments: 20,
     favorites: 10,
-    retweets: 2
+    rePosts: 2
   },
   {
     userPhoto: "assets/images/jpg/user-photo-2.jpg",
@@ -21,7 +21,7 @@ export const TWITS: Twit[] = [
     imageAttachment: "assets/images/png/tweet-2.png",
     comments: 3,
     favorites: 20,
-    retweets: 4
+    rePosts: 4
   },
   {
     userPhoto: "assets/images/jpg/user-photo-3.jpg",
@@ -31,6 +31,6 @@ export const TWITS: Twit[] = [
     username: "@ingeniero_Boss",
     comments: 50,
     favorites: 5,
-    retweets: 1
+    rePosts: 1
   },
 ]

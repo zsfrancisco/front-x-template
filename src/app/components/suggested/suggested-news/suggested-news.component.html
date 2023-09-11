@@ -1,4 +1,4 @@
 <h3>What's happening</h3>
-<app-suggested-news-item *ngFor="let newsItem of suggestedNewsList | async as list"
+<app-suggested-news-item *ngFor="let newsItem of suggestedNewsList$ | async"
                         [suggestedNewsItem]="newsItem">
 </app-suggested-news-item>

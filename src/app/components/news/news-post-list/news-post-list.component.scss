@@ -1,0 +1,30 @@
+@import 'src/assets/scss';
+
+:host {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.news-post-list {
+    &__theme {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid $gray-border;
+
+        &:hover {
+            background-color: $black-hover;
+            cursor: pointer;
+        }
+
+        span {
+            color: $blue-light;;
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+}

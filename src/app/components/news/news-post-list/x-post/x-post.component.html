@@ -1,0 +1,37 @@
+<section class="post__photo">
+    <img [src]="post.userPhoto" [alt]="post.username+'photo'">
+</section>
+<section class="post__content">
+    <div class="post-information">
+        <div class="post-information__content">
+            <span>{{post.userFullName}}</span>
+            <span>{{post.username}}</span> - <span>{{post.timeOfPublished}}</span>
+            <p>{{post.content}}</p>
+        </div>
+        <div class="post-information__options">
+            <img src="assets/images/svg/ellipsis-icon.svg" alt="ellipsis-icon">
+        </div>
+    </div>
+    <img *ngIf="post.imageAttachment" [src]="post.imageAttachment" alt="post-image-attachment">
+    <div class="reactions">
+        <div class="reaction">
+            <img src="assets/images/svg/comment-icon.svg" alt="comment-icon">
+            <span>{{post.comments}}</span>
+        </div>
+        <div class="reaction">
+            <img src="assets/images/svg/retweet-icon.svg" alt="retweet-icon">
+            <span>{{post.rePosts}}</span>
+        </div>
+        <div class="reaction">
+            <img src="assets/images/svg/heart-icon.svg" alt="heart-icon">
+            <span>{{post.favorites}}</span>
+        </div>
+        <div class="reaction">
+            <img src="assets/images/svg/metrics-icon.svg" alt="metrics-icon">
+            <span>{{post.favorites}}</span>
+        </div>
+        <div class="reaction">
+            <img src="assets/images/svg/share-icon.svg" alt="share-icon">
+        </div>
+    </div>
+</section>

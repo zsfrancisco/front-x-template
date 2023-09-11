@@ -9,7 +9,7 @@ import { SuggestedNews } from 'src/app/types';
   styleUrls: ['./suggested-news.component.scss']
 })
 export class SuggestedNewsComponent {
-  suggestedNewsList: Observable<SuggestedNews[]> = of([]);
+  suggestedNewsList$: Observable<SuggestedNews[]> = of([]);
 
   constructor(private suggestedService: SuggestedService) { }
 
@@ -18,6 +18,6 @@ export class SuggestedNewsComponent {
   }
 
   getSuggestedNewsList(): void {
-    this.suggestedNewsList = this.suggestedService.getSuggestedNews();
+    this.suggestedNewsList$ = this.suggestedService.getSuggestedNews();
   }
 }

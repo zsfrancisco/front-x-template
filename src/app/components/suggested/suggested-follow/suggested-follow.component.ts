@@ -9,7 +9,7 @@ import { SuggestedFollow } from 'src/app/types';
   styleUrls: ['./suggested-follow.component.scss']
 })
 export class SuggestedFollowComponent implements OnInit {
-  suggestedFollowList: Observable<SuggestedFollow[]> = of([]);
+  suggestedFollowList$: Observable<SuggestedFollow[]> = of([]);
 
   constructor(private suggestedService: SuggestedService) { }
 
@@ -18,6 +18,6 @@ export class SuggestedFollowComponent implements OnInit {
   }
 
   getSuggestedFollowList() {
-    this.suggestedFollowList = this.suggestedService.getSuggestedFollow();
+    this.suggestedFollowList$ = this.suggestedService.getSuggestedFollow();
   }
 }

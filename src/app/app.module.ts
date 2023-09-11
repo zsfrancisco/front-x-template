@@ -12,6 +12,7 @@ import { SuggestedFollowItemComponent } from './components/suggested/suggested-f
 import { NewsHomeComponent } from './components/news/news-home/news-home.component';
 import { NewsPostCreationComponent } from './components/news/news-post-creation/news-post-creation.component';
 import { NewsPostListComponent } from './components/news/news-post-list/news-post-list.component';
+import { XPostComponent } from './components/news/news-post-list/x-post/x-post.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NewsPostListComponent } from './components/news/news-post-list/news-pos
     SuggestedFollowItemComponent,
     NewsHomeComponent,
     NewsPostCreationComponent,
-    NewsPostListComponent
+    NewsPostListComponent,
+    XPostComponent
   ],
   imports: [
     BrowserModule

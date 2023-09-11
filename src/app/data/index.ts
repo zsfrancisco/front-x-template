@@ -1,1 +1,1 @@
-export * from "./twits-fake-data";
+export * from "./post-fake-data";

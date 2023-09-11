@@ -1,4 +1,4 @@
 <h3>Who to follow</h3>
-<app-suggested-follow-item *ngFor="let followItem of suggestedFollowList | async as list"
+<app-suggested-follow-item *ngFor="let followItem of suggestedFollowList$ | async"
                             [suggestedFollowItem]="followItem">
 </app-suggested-follow-item>
