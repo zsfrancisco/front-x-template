@@ -1,0 +1,20 @@
+<section id="news-content-id" class="suggested-news-item__content">
+    <span>{{suggestedNewsItem.theme}}</span>
+    <p>{{suggestedNewsItem.title}}</p>
+    <span *ngIf="!suggestedNewsItem.xPostCount">
+        Trending with <span>{{suggestedNewsItem.about}}</span>
+    </span>
+    <span *ngIf="!suggestedNewsItem.xPostCount">
+        Trending with <span>{{suggestedNewsItem.xPostCount}}</span>
+    </span>
+</section>
+<section *ngIf="suggestedNewsItem.image" 
+        class="suggested-news-item__image" 
+        id="news-image-id">
+    <img [src]="suggestedNewsItem.image" [alt]="suggestedNewsItem.image+'image'">
+</section>
+<section *ngIf="!suggestedNewsItem.image"
+        class="suggested-news-item__options"
+        id="news-option-id">
+    <img src="assets/images/svg/ellipsis-icon.svg" alt="x-post-options">
+</section>

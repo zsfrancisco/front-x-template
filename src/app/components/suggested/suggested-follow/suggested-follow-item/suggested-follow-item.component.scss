@@ -1,0 +1,49 @@
+@import 'src/assets/scss';
+
+:host {
+    @extend .suggested-section-item;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    align-items: stretch;
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+}
+
+button {
+    width: 100px;
+    background-color: $white;
+    color: $black;
+    height: 2rem;
+    border-radius: 624.938rem;
+    font-size: 0.975rem;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.suggested-follow-item {
+    &__user-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.938rem;
+        font-weight: 700;
+
+        span {
+            color: $white;
+            &:last-of-type {
+                color: $gray-font;
+            }
+        }
+    }
+}
