@@ -9,6 +9,9 @@ import { SuggestedFollowComponent } from './components/suggested/suggested-follo
 import { SuggestedNewsComponent } from './components/suggested/suggested-news/suggested-news.component';
 import { SuggestedNewsItemComponent } from './components/suggested/suggested-news/suggested-news-item/suggested-news-item.component';
 import { SuggestedFollowItemComponent } from './components/suggested/suggested-follow/suggested-follow-item/suggested-follow-item.component';
+import { NewsHomeComponent } from './components/news/news-home/news-home.component';
+import { NewsPostCreationComponent } from './components/news/news-post-creation/news-post-creation.component';
+import { NewsPostListComponent } from './components/news/news-post-list/news-post-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { SuggestedFollowItemComponent } from './components/suggested/suggested-f
     SuggestedFollowComponent,
     SuggestedNewsComponent,
     SuggestedNewsItemComponent,
-    SuggestedFollowItemComponent
+    SuggestedFollowItemComponent,
+    NewsHomeComponent,
+    NewsPostCreationComponent,
+    NewsPostListComponent
   ],
   imports: [
     BrowserModule

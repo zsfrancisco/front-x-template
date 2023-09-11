@@ -1,3 +1,7 @@
+@import 'src/assets/scss';
+
 :host {
     width: 40%;
+    border-left: 1px solid $gray-border;
+    border-right: 1px solid $gray-border;
 }

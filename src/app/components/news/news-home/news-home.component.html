@@ -1,0 +1,9 @@
+<span>Home</span>
+<div>
+    <button *ngFor="let buttonText of optionButtons"
+            (click)="optionSelected=buttonText">
+        <span [class.option-selected]="buttonText===optionSelected">
+            {{buttonText}}
+        </span>
+    </button>
+</div>

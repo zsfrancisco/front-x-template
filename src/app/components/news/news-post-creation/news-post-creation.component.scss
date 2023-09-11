@@ -1,0 +1,91 @@
+@import 'src/assets/scss';
+
+:host {
+    width: 100%;
+    display: flex;
+    padding: 0 1.25rem 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-border;
+}
+
+.news-post-creation {
+    &__photo {
+        width: 10%;
+
+        img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    }
+
+    &__form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        .what-is-happening {
+            display: flex;
+            flex-direction: column;
+            padding: 1.2rem 0 0.5rem 0.625rem;
+            border-bottom: 1px solid $gray-border;
+
+            span {
+                font-size: 1.25rem;
+                color: $gray-font;
+                width: fit-content;
+
+                &:last-of-type {
+                    margin-top: 0.5rem;
+                    color: $blue-light;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    display: flex;
+                    align-items: center;
+                    padding: 0.4rem 0.75rem;
+                    border-radius: 9999px;
+
+                    &:hover {
+                        background-color: $blue-light-hover-rgba;
+                    }
+
+                    img {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        margin-right: 0.3rem;
+                    }
+                }
+            }
+        }
+
+        .option-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0 0 0.625rem;
+
+            .options {
+                img {
+                    width: 1.75rem;
+                    height: 1.25rem;
+                    margin-right: 1rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            create-post {
+                @extend .create-x-button;
+                width: 75px;
+                height: 2.125rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

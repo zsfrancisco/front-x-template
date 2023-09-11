@@ -1,0 +1,48 @@
+@import 'src/assets/scss';
+
+:host {
+    display: block;
+    color: $white;
+    padding: 1.25rem 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray-border;
+    margin-bottom: 1.25rem;
+}
+
+span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 1.25rem;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    margin-top: 1.25rem;
+
+    button {
+        width: 50%;
+        height: 3.313rem;
+        color: $white;
+        background-color: transparent;
+        @extend .flex-centered;
+
+        &:hover {
+            background-color: $black-hover;
+            cursor: pointer;
+        }
+
+        span {
+            width: fit-content;
+            height: 100%;
+            font-size: 0.938rem;
+            font-weight: 400;
+            @extend .flex-centered;
+            padding: 0;
+
+            &.option-selected {
+                border-bottom: 3px solid $blue-light;
+            }
+        }
+    }
+}
